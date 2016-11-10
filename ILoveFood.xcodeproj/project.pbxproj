@@ -13,6 +13,10 @@
 		18ED38BF1C7354520060C6C5 /* ILoveFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18ED38BD1C7354520060C6C5 /* ILoveFood.xcdatamodeld */; };
 		18ED38C11C7354520060C6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ED38C01C7354520060C6C5 /* Assets.xcassets */; };
 		18ED38C41C7354520060C6C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED38C21C7354520060C6C5 /* LaunchScreen.storyboard */; };
+		18ED38D01C7367770060C6C5 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED38CE1C7367770060C6C5 /* Recipe+CoreDataProperties.swift */; };
+		18ED38D11C7367770060C6C5 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED38CF1C7367770060C6C5 /* Recipe.swift */; };
+		18ED38D31C736C1A0060C6C5 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED38D21C736C1A0060C6C5 /* RecipeCell.swift */; };
+		18ED38D51C73AAA80060C6C5 /* CreateRecipeVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED38D41C73AAA80060C6C5 /* CreateRecipeVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		18ED38C01C7354520060C6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18ED38C31C7354520060C6C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18ED38C51C7354520060C6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ED38CE1C7367770060C6C5 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18ED38CF1C7367770060C6C5 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		18ED38D21C736C1A0060C6C5 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		18ED38D41C73AAA80060C6C5 /* CreateRecipeVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		18ED38B51C7354520060C6C5 /* ILoveFood */ = {
 			isa = PBXGroup;
 			children = (
+				18ED38CD1C7366B80060C6C5 /* Model */,
+				18ED38CC1C7366AC0060C6C5 /* View */,
+				18ED38CB1C73669B0060C6C5 /* Controller */,
 				18ED38B61C7354520060C6C5 /* AppDelegate.swift */,
-				18ED38B81C7354520060C6C5 /* ViewController.swift */,
 				18ED38BA1C7354520060C6C5 /* Main.storyboard */,
 				18ED38C01C7354520060C6C5 /* Assets.xcassets */,
 				18ED38C21C7354520060C6C5 /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				18ED38BD1C7354520060C6C5 /* ILoveFood.xcdatamodeld */,
 			);
 			path = ILoveFood;
+			sourceTree = "<group>";
+		};
+		18ED38CB1C73669B0060C6C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18ED38D41C73AAA80060C6C5 /* CreateRecipeVCViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18ED38CC1C7366AC0060C6C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18ED38B81C7354520060C6C5 /* ViewController.swift */,
+				18ED38D21C736C1A0060C6C5 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		18ED38CD1C7366B80060C6C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18ED38CE1C7367770060C6C5 /* Recipe+CoreDataProperties.swift */,
+				18ED38CF1C7367770060C6C5 /* Recipe.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +176,10 @@
 			files = (
 				18ED38B91C7354520060C6C5 /* ViewController.swift in Sources */,
 				18ED38B71C7354520060C6C5 /* AppDelegate.swift in Sources */,
+				18ED38D01C7367770060C6C5 /* Recipe+CoreDataProperties.swift in Sources */,
+				18ED38D31C736C1A0060C6C5 /* RecipeCell.swift in Sources */,
+				18ED38D11C7367770060C6C5 /* Recipe.swift in Sources */,
+				18ED38D51C73AAA80060C6C5 /* CreateRecipeVCViewController.swift in Sources */,
 				18ED38BF1C7354520060C6C5 /* ILoveFood.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +330,7 @@
 				18ED38CA1C7354530060C6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
